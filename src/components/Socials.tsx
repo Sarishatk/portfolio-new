@@ -8,7 +8,7 @@ function Socials() {
           downloadButton.addEventListener('click', function () {
             var pdfPath = './Resume/resume.pdf';
             var downloadLink = document.createElement('a');
-            downloadLink.download = 'Athul-resume.pdf';
+            downloadLink.download = 'SARISHACV.pdf';
             downloadLink.href = pdfPath;
             document.body.appendChild(downloadLink);
             downloadLink.click();
