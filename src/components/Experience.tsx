@@ -40,7 +40,7 @@ const Experience: React.FC = () => {
           <p className='fw-bolder'>SSLC</p>
           <p style={{ fontSize: '12px' }}>Kerala Board</p>
           <p style={{ fontSize: '12px' }}>Lady sankaran nair HSS school ottapalam</p>
-          <p style={{ fontSize: '12px' }}>palakkad, Kerala, India · Remote</p>
+          <p style={{ fontSize: '12px' }}>palakkad, Kerala, India</p>
         </>
       ),
     },
