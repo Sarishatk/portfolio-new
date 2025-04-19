@@ -1,6 +1,13 @@
 import { useEffect } from "react";
 export default function Projects() {
     const projectData = [
+      {
+        projectName: "TAVOLA",
+        description: "AI powered Restaurant Management System",
+        liveUrl: "",
+        screenshot: "/projectImage/tavola.png",
+        techStack: [["Typescript"]],
+      },
         {
           projectName: "Netflix-clone",
           description:
@@ -39,6 +46,7 @@ export default function Projects() {
           screenshot: "/projectImage/calcu.png",
           techStack: [["ReactJS", "RUST API", "AXIOS"]],
         },
+        
         
       ];
   useEffect(() => {
