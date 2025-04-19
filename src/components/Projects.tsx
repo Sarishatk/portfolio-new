@@ -4,7 +4,7 @@ export default function Projects() {
       {
         projectName: "TAVOLA",
         description: "AI powered Restaurant Management System",
-        liveUrl: "",
+        liveUrl: "https://github.com/Sarishatk?tab=repositories",
         screenshot: "/projectImage/tavola.png",
         techStack: [["Typescript"]],
       },
