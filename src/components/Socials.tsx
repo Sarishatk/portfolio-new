@@ -1,43 +1,47 @@
-import { useEffect } from "react";
-
 function Socials() {
-    useEffect(() => {
-        const downloadButton = document.getElementById('downloadButton');
-    
-        if (downloadButton) {
-          downloadButton.addEventListener('click', function () {
-            var pdfPath = './Resume/resume.pdf';
-            var downloadLink = document.createElement('a');
-            downloadLink.download = 'SARISHACV.pdf';
-            downloadLink.href = pdfPath;
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-          });
-        }
-      }, []); 
-      
-      const handleDownload = () => {
-        var pdfPath = '/resume/SARISHACV.pdf';
-        var downloadLink = document.createElement('a');
-        downloadLink.download = 'SARISHACV.pdf'; 
-        downloadLink.href = pdfPath; 
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-      };
-    
-    return (
-        <div className="ms-3">
-            <p className="urbanist-heavy fs-2">SOCIALS</p>
-            <p className="urbanist fs-4 my-2 social-link"><i className="fa-brands fa-square-github pe-2 fs-3"></i><a target="_blank" href="https://github.com/Sarishatk">GITHUB</a> <i className="fi fi-bs-arrow-up-right fs-6" /></p>
-            <p className="urbanist fs-4 my-2 social-link"><i className="fa-brands fa-linkedin pe-2 fs-3"></i><a target="_blank" href="https://www.linkedin.com/in/sarisha-krishna-42b296303/">LINKEDIN</a> <i className="fi fi-bs-arrow-up-right fs-6" /> </p>
-            <p className="urbanist fs-4 my-2 social-link"><i className="fa-brands fa-square-instagram pe-2 fs-3"></i><a target="_blank" href="https://www.instagram.com/sarisha_t.k/">INSTAGRAM</a> <i className="fi fi-bs-arrow-up-right fs-6" /></p>
-            <hr className="m-0" style={{border:'1px solid #fffff'}} />
-            <p className="urbanist-heavy fs-2">RESUME</p>
-            <p onClick={handleDownload} className="urbanist fs-4 my-2 social-link"><i className="fa-solid fa-file  pe-2 fs-3"></i>DOWNLOAD <i className="fi fi-bs-arrow-up-right fs-6" /></p>
-        </div>
-    )
+  const handleDownload = () => {
+    const pdfPath = "/resume/SARISHACV.pdf"; // Place resume in public/resume/
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "SARISHACV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return (
+    <div className="ms-3">
+      <h3 className="urbanist-heavy fs-2 mb-3 text-light">Socials</h3>
+
+      <div className="d-flex flex-column gap-2">
+        <a
+          href="https://github.com/Sarishatk"
+          target="_blank"
+          className="fs-5 text-decoration-none text-light d-flex align-items-center social-link"
+        >
+          <i className="fa-brands fa-github me-2 fs-4"></i> GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/sarisha-krishna-42b296303/"
+          target="_blank"
+          className="fs-5 text-decoration-none text-light d-flex align-items-center social-link"
+        >
+          <i className="fa-brands fa-linkedin me-2 fs-4"></i> LinkedIn
+        </a>
+      </div>
+
+      <hr className="my-4 border-light opacity-25" />
+
+      <h3 className="urbanist-heavy fs-2 mb-3 text-light">Resume</h3>
+      <button
+        onClick={handleDownload}
+        className="btn btn-outline-light px-4 py-2 rounded-pill fw-bold"
+      >
+        <i className="fa-solid fa-file me-2"></i> Download CV
+      </button>
+    </div>
+  );
 }
 
-export default Socials
+export default Socials;
