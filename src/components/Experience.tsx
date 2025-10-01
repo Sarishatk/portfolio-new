@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
 
   return (
     <>
-      <p className='guntertest-font fs-3 text-light ms-2'>EDUCATION</p>
+      <p className='fw-bold fs-3 text-light ms-2'>EDUCATION</p>
       <div className='py-1' style={{ overflowY: 'scroll', height: '250px', overflowX: 'hidden' }}>
         <Timeline
           style={{ color: '#fff' }}

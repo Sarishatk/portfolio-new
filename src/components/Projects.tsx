@@ -54,7 +54,7 @@ export default function Projects() {
   }, []);
   return (
     <>
-      <p className="guntertest-font fs-2 text-center text-light">PROJECTS</p>
+      <p className="fw-bold fs-2 text-center text-light">PROJECTS</p>
       <div className="w-100">
         {projectData.length != 0 ? (
           <div

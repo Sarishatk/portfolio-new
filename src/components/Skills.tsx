@@ -10,7 +10,7 @@ function Skills() {
 
     return (
         <div className="p-4 d-flex flex-column justify-content-center h-100 text-center">
-            <h2 className="guntertest-font mb-3">🚀 My Skills</h2>
+            <h2 className="fw-bold mb-3">🚀 My Skills</h2>
             <hr className="w-25 mx-auto mb-4" />
             
             <div className="row g-4">
