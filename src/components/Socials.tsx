@@ -1,6 +1,6 @@
 function Socials() {
   const handleDownload = () => {
-    const pdfPath = "/resume/SARISHACV.pdf"; // Place resume in public/resume/
+    const pdfPath = "/resume/sarishakrishnakumar_resume.pdf"; // Place resume in public/resume/
     const link = document.createElement("a");
     link.href = pdfPath;
     link.download = "SARISHACV.pdf";
